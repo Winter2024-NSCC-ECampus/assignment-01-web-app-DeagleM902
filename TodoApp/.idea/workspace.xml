@@ -11,9 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cf51624b-f719-4b87-b6e1-327672e81b05" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/todoapp/servlet/TodoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/todoapp/servlet/TodoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/todoform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/todoform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/todolist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/todolist.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +293,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740068657359</updated>
-      <workItem from="1740068658374" duration="25439000" />
+      <workItem from="1740068658374" duration="30396000" />
     </task>
     <servers />
   </component>
