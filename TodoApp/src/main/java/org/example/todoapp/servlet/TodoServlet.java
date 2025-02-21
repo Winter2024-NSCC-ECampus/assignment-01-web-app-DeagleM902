@@ -66,18 +66,6 @@ public class TodoServlet extends HttpServlet {
         }
     }
 
-    @Override
-    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
-        //CONTINUE FILLING
-    }
-
-    @Override
-    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
-        //CONTINUE FILLING
-    }
-
     private void listTodos(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("todos", todoDAO.getAllTodos());
         RequestDispatcher dispatcher = request.getRequestDispatcher("todolist.jsp");
@@ -102,9 +90,11 @@ public class TodoServlet extends HttpServlet {
         String description = request.getParameter("description");
         boolean isCompleted = Boolean.parseBoolean(request.getParameter("is_completed"));
         Todo newTodo = new Todo();
+
         newTodo.setTitle(title);
         newTodo.setDescription(description);
         newTodo.setCompleted(isCompleted);
+
         todoDAO.addTodo(newTodo);
         response.sendRedirect("todos");
     }
@@ -115,10 +105,12 @@ public class TodoServlet extends HttpServlet {
         String description = request.getParameter("description");
         boolean isCompleted = Boolean.parseBoolean(request.getParameter("is_completed"));
         Todo todo = new Todo();
+
         todo.setId(id);
         todo.setTitle(title);
         todo.setDescription(description);
         todo.setCompleted(isCompleted);
+
         todoDAO.updateTodo(todo);
         response.sendRedirect("todos");
     }

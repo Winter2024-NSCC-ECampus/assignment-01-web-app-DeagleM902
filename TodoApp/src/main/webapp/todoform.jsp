@@ -25,7 +25,6 @@
     </c:choose>
 </h1>
 <form action="todos" method="post">
-    <!-- If editing, include hidden id and action "update"; otherwise, use action "add" -->
     <c:if test="${not empty todo}">
         <input type="hidden" name="id" value="${todo.id}" />
         <input type="hidden" name="action" value="update" />
