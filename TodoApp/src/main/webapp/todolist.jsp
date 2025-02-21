@@ -35,7 +35,7 @@
                     <form action="todos" method="post" style="display:inline;">
                         <input type="hidden" name="action" value="delete">
                         <input type="hidden" name="id" value="${todo.id}">
-                        <input type="submit" value="Delete" onclick="return confirm('Are you sure?')">
+                        <input type="submit" value="Delete" onclick="return confirm('Are you sure you want to delete this todo item?')">
                     </form>
                 </td>
             </tr>

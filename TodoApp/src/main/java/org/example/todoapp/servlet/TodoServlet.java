@@ -31,9 +31,6 @@ public class TodoServlet extends HttpServlet {
                 case "edit":
                     showEditForm(request, response);
                     break;
-                case "delete":
-                    deleteTodo(request, response);
-                    break;
                 default:
                     listTodos(request, response);
                     break;

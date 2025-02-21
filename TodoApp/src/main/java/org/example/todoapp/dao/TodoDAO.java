@@ -6,11 +6,8 @@ import org.example.todoapp.model.Todo;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class TodoDAO {
-    private static final Logger logger = Logger.getLogger(TodoDAO.class.getName());
-
     public List<Todo> getAllTodos() {
         List<Todo> todos = new ArrayList<>();
         String sql = "SELECT * FROM todos";
